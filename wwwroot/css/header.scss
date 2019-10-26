@@ -1,0 +1,67 @@
+
+#page_wrapper #header 
+{
+	
+}
+
+	#page_wrapper #header .title_container
+	{
+		font-size:1.5em;
+		padding:3px;
+		margin:0px auto;
+		width:900px;
+	}
+	
+	#page_wrapper #header .title,
+	#page_wrapper #header .title_sub
+	{
+		float:left;
+	}
+	
+	#page_wrapper #header .title
+	{
+			font-size:.9em;
+	}
+	
+	#page_wrapper #header .title_sub
+	{
+		clear:both;
+		font-size: .5em;
+	}
+	
+	#page_wrapper #header .title_container #nav_container
+	{
+		float:right;
+		margin:10px 0px 0px 0px;
+		color:black;
+		font-size:.71em;
+
+	}
+	
+	#nav_container ul
+	{
+		list-style-type: none; 
+	}
+	
+		#nav_container ul li 
+		{
+			display:inline;
+			list-style-type: none; 
+			padding:10px 25px 10px 25px;
+			text-align:center;
+		}	
+		
+			#nav_container ul li a 
+			{
+				text-decoration:none;
+				color:black;
+				text-align:center;
+			}	
+			
+
+		
+		#nav_container ul li.current
+		{
+			text-decoration:underline;
+		}
+		
