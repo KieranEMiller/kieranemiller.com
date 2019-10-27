@@ -1,67 +1,108 @@
 
-#page_wrapper #header 
-{
-	
-}
+#header {
+	background-color:$COLOR_PRIMARY;
+	border-bottom:solid #000000 1px;
 
-	#page_wrapper #header .title_container
-	{
+	#header_contents {
+		width:95%;
+		margin:0px auto;
+
+		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+			max-width: $SCREEN_SIZE_SMALL;
+			padding:0px;
+		}
+		@media screen and (min-width: $SCREEN_SIZE_MEDIUM) {
+			max-width: $SCREEN_SIZE_MEDIUM;
+			padding:3px;
+		}
+		@media screen and (min-width: $SCREEN_SIZE_LARGE) {
+			max-width: $SCREEN_SIZE_LARGE;
+			padding:8px;
+		}
+	}
+
+	#title_block {
 		font-size:1.5em;
 		padding:3px;
-		margin:0px auto;
-		width:900px;
-	}
-	
-	#page_wrapper #header .title,
-	#page_wrapper #header .title_sub
-	{
 		float:left;
-	}
+		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+			float:none;
+			padding:0px;
+			margin:0px auto;
+			width:250px;
+			text-align:center;
+		}
 	
-	#page_wrapper #header .title
-	{
+		.title, .title_sub {
+			float:left;
+			@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+				float:none;
+				text-align:center;
+			}
+			text-decoration:none;
+			color: $COLOR_PRIMARY_TEXT;
+		}
+		
+		.title {
 			font-size:.9em;
-	}
-	
-	#page_wrapper #header .title_sub
-	{
-		clear:both;
-		font-size: .5em;
-	}
-	
-	#page_wrapper #header .title_container #nav_container
-	{
-		float:right;
-		margin:10px 0px 0px 0px;
-		color:black;
-		font-size:.71em;
+			font-weight:bold;
+		}
 
+		.title_sub {
+			clear:both;
+			font-size: .5em;
+			@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+				display:none;
+			}
+		}
 	}
+}
 	
-	#nav_container ul
-	{
+#nav_container {
+	margin:10px 0px 0px 0px;
+	color:black;
+	font-size:1em;
+	float:right;
+
+	@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+		float:none;
+		clear:both;
+		margin:0px;
+		height:26px;
+	}
+
+	ul {
 		list-style-type: none; 
-	}
-	
-		#nav_container ul li 
-		{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-evenly;
+		width:300px;
+
+		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+			width:auto;
+		}
+
+		li {
 			display:inline;
 			list-style-type: none; 
-			padding:10px 25px 10px 25px;
+			padding:5px;
 			text-align:center;
-		}	
-		
-			#nav_container ul li a 
-			{
+
+			a {
 				text-decoration:none;
 				color:black;
 				text-align:center;
-			}	
-			
+				color:$COLOR_PRIMARY_TEXT;
+			}
+		}
 
-		
-		#nav_container ul li.current
-		{
+		li.current {
 			text-decoration:underline;
 		}
-		
+
+		li:hover {
+			border-bottom:solid white 2px;
+		}
+	}
+}
+	
