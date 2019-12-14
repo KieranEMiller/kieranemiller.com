@@ -1,16 +1,26 @@
 $COLOR_PRIMARY: #0e4220;
-$COLOR_PRIMARY_TEXT: #FFFFFF;
+$COLOR_PRIMARY_TEXT: #FFF;
+
+$COLOR_BACKGROUND: #FFF;
 
 $SCREEN_SIZE_SMALL: 500px;
 $SCREEN_SIZE_MEDIUM: 500px;
 $SCREEN_SIZE_LARGE: 700px;
 
+body, #page_wrapper {
+	background-color: $COLOR_BACKGROUND;
+}
+
 .center {
 	margin:0px auto;
 }
 
-.error {
-	color:red;
+.position_relative {
+    position:relative;
+}
+
+.error{
+    color:red;
 }
 
 .clear_both { 
@@ -19,5 +29,17 @@ $SCREEN_SIZE_LARGE: 700px;
 
 .hidden { 
 	display:none; 
+}
+
+.right_align {
+	text-align:right;
+}
+
+.float_right {
+    float:right;
+}
+
+.float_left {
+    float:left;
 }
 

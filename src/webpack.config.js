@@ -7,10 +7,10 @@ var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const Paths = {
     React: {
-        Entry: path.resolve(__dirname, './assets/js/react/dev/app.jsx'),
-        Output: path.resolve(__dirname, './assets/js/react/dist')
+        Entry: path.resolve(__dirname, './wwwroot/assets/js/react/dev/app.jsx'),
+        Output: path.resolve(__dirname, './wwwroot/assets/js/react/dist')
     },
-    Css: path.resolve(__dirname, './assets/css')
+    Css: path.resolve(__dirname, './wwwroot/assets/css')
 };
 
 module.exports = {
@@ -47,7 +47,7 @@ module.exports = {
     plugins: [
         new WebpackNotifierPlugin(),
         new MiniCssExtractPlugin({
-            filename: '../../../../assets/css/styles.css'
+            filename: '../../../../assets/css/styles.min.css'
         })
         /*, new BrowserSyncPlugin()*/
     ]
