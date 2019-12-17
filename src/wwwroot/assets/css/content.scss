@@ -9,7 +9,7 @@
 
 		width:95%;
 		margin:0px auto;
-		
+
 		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
 			max-width: $SCREEN_SIZE_SMALL;
 			padding:0px;
@@ -26,6 +26,12 @@
 		h2 {
 			border-bottom: solid #000000 5px;
 			margin-bottom: 10px;
+			font-size:larger;
+
+			a {
+				text-decoration:none;
+				color:#000000;
+			}
 		}
 
 		.content_row {
