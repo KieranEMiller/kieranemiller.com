@@ -18,7 +18,7 @@ class App extends React.Component {
             <Router>
                 <Header />
                 <Routing />
-                <Footer />
+                {/*<Footer />*/}
             </Router>
         ); 
     }
