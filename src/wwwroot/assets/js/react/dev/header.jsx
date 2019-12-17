@@ -17,10 +17,6 @@ const useStyles = makeStyles({
   list: {
     width: 250,
   },
-  /*
-  appBar: {
-    backgroundColor: "#274e19"
-  }*/
 });
 
 export default function SwipeableTemporaryDrawer() {
@@ -58,17 +54,13 @@ export default function SwipeableTemporaryDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          {/*<Typography variant="h6" style={{ flex: 1 }}>
-            <Link to={"/Index"}>Kieran E Miller</Link>
-            <div className="title_block">
-              <div className="title">TEST</div>
-              <div className="titleSub">blah blah blash</div>
-            </div>
-          </Typography>*/}
           <div id="title_block">
-              <div className="title">TEST</div>
-              <div className="title_sub">blah blah blash</div>
-            </div>
+              <div className="title">
+                <Typography variant="h6"><a href="/Index">Kieran E. Miller</a></Typography>
+
+                </div>
+              <div className="title_sub">software engineer</div>
+          </div>
           <div className="nav_container">
               <ul>
                 <li><Link to={"/About"}>About</Link></li>
