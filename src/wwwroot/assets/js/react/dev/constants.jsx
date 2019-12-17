@@ -6,6 +6,8 @@ export const Urls = {
 export const Routes = {
     DEFAULT: "/",
     INDEX: "/",
+    PROJECTS: "/projects",
+    CONTACT: "/contact"
 }
 
 export const Runtime = {

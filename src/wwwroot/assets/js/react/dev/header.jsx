@@ -11,7 +11,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from "@material-ui/core/Typography";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+import {Routes} from './constants.jsx';
 
 const useStyles = makeStyles({
   list: {
@@ -56,15 +58,15 @@ export default function SwipeableTemporaryDrawer() {
           </IconButton>
           <div id="title_block">
               <div className="title">
-                <Typography variant="h6"><a href="/Index">Kieran E. Miller</a></Typography>
+                <Typography variant="h6"><a href={Routes.INDEX}>Kieran E. Miller</a></Typography>
 
                 </div>
               <div className="title_sub">software engineer</div>
           </div>
           <div className="nav_container">
               <ul>
-                <li><Link to={"/About"}>About</Link></li>
-                <li><Link to={"/Projects"}>Projects</Link></li>
+                <li><Link to={Routes.PROJECTS}>Projects</Link></li>
+                <li><Link to={Routes.CONTACT}>Contact</Link></li>
               </ul>
 
           </div>
@@ -83,10 +85,9 @@ export default function SwipeableTemporaryDrawer() {
           onKeyDown={toggleDrawer(false)}
         >
           <List>
-            {['Home', 'Projects', 'About', 'Contanct'].map((text, index) => (
-              <ListItem button key={text}>
-                {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>*/}
-                <ListItemText primary={text} />
+            {[{display:"Home", href:Routes.INDEX}, {display:"Projects", href:Routes.PROJECTS}, {display:"Contact", href:Routes.CONTACT}].map((item, index) => (
+              <ListItem button component="a" key={item.href} href={item.href}>
+                <ListItemText primary={item.display} />
               </ListItem>
             ))}
           </List>
