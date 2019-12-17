@@ -1,14 +1,15 @@
 #content_wrapper {
+	padding-top:100px;
 
-	padding-top:25px;
 	@media screen and (max-width: $SCREEN_SIZE_SMALL) {
-		padding-top:10px;
+		padding-top:70px;
 	}
 
 	#content {
+
 		width:95%;
 		margin:0px auto;
-
+		
 		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
 			max-width: $SCREEN_SIZE_SMALL;
 			padding:0px;
