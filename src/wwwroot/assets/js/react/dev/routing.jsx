@@ -6,6 +6,7 @@ import Header from          './header.jsx';
 import Index from           './paths/index.jsx';
 import Contact from         './paths/contact.jsx';
 import Projects from        './paths/projects.jsx';
+import About from           './paths/about.jsx';
 import { Routes } from      './constants.jsx';
 
 class Routing extends React.Component {
@@ -17,6 +18,7 @@ class Routing extends React.Component {
                     <Route exact path={Routes.INDEX} component={Index} />
                     <Route exact path={Routes.PROJECTS} component={Projects} />
                     <Route exact path={Routes.CONTACT} component={Contact} />
+                    <Route exact path={Routes.ABOUT} component={About} />
                 </Switch>
             </div>
         );

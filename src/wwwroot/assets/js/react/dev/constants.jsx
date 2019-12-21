@@ -7,7 +7,8 @@ export const Routes = {
     DEFAULT: "/",
     INDEX: "/",
     PROJECTS: "/projects",
-    CONTACT: "/contact"
+    CONTACT: "/contact",
+    ABOUT: "/about"
 }
 
 export const Runtime = {

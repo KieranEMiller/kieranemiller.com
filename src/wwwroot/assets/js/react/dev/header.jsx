@@ -67,6 +67,7 @@ export default function SwipeableTemporaryDrawer() {
               <ul>
                 <li><Link to={Routes.PROJECTS}>Projects</Link></li>
                 <li><Link to={Routes.CONTACT}>Contact</Link></li>
+                <li><Link to={Routes.ABOUT}>About</Link></li>
               </ul>
 
           </div>
@@ -85,7 +86,12 @@ export default function SwipeableTemporaryDrawer() {
           onKeyDown={toggleDrawer(false)}
         >
           <List>
-            {[{display:"Home", href:Routes.INDEX}, {display:"Projects", href:Routes.PROJECTS}, {display:"Contact", href:Routes.CONTACT}].map((item, index) => (
+            {[
+                {display:"Home", href:Routes.INDEX}, 
+                {display:"Projects", href:Routes.PROJECTS}, 
+                {display:"Contact", href:Routes.CONTACT},
+                {display:"About", href:Routes.ABOUT}
+              ].map((item, index) => (
               <ListItem button component="a" key={item.href} href={item.href}>
                 <ListItemText primary={item.display} />
               </ListItem>
