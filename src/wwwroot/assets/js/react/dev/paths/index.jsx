@@ -30,8 +30,7 @@ class Index extends BaseComponent {
 
                 <div className="content_row">
                     <h2><Link href={Routes.CONTACT}>Contact</Link></h2>
-                    Contact me through any of the mediums <Link href={Routes.CONTACT}>shown here.</Link>
-                    
+                    Contact me through any of the mediums <Link to={Routes.CONTACT}>shown here.</Link>
                 </div>
             </ContentContainer>
         );
