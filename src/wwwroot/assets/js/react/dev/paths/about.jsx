@@ -10,10 +10,17 @@ class About extends BaseComponent {
             <ContentContainer>
                 <div className="content_row">
                     <h2>About</h2>
-                    <ul>
-                        <li>Employment opportunities: <a href="mailto:jobs@kieranemiller.com">jobs@kieranemiller.com</a></li>
-                        <li>LinkedIn: <a href="https://linkedin.com/KieranEMiller">https://linkedin.com/KieranEMiller</a></li>
-                    </ul>
+                    <p>This site serves as the web presence and portfolio for Kieran E. Miller.  I am a software engineer working in the NJ/NYC metro area.</p>
+                </div>
+
+                <div className="content_row">
+                    <h2>Resume/CV</h2>
+                    <p>Is <a target="blank" href="/assets/resume/Resume_KieranEMiller_20191127_web.pdf">available here.</a></p>
+                </div>
+
+                <div className="content_row">
+                    <h2>This Site</h2>
+                    <p>Built with React and static content running on AWS.</p>
                 </div>
             </ContentContainer>
         );
