@@ -10,9 +10,11 @@ class Contact extends BaseComponent {
             <ContentContainer>
                 <div className="content_row">
                     <h2>Contact</h2>
+                    <p>How to contact me:</p>
+                    <br/>
                     <ul>
-                        <li>Employment opportunities: <a href="mailto:jobs@kieranemiller.com">jobs@kieranemiller.com</a></li>
-                        <li>LinkedIn: <a href="https://linkedin.com/KieranEMiller">https://linkedin.com/KieranEMiller</a></li>
+                        <li><label>Employment Opportunities:</label><a href="mailto:jobs@kieranemiller.com">jobs@kieranemiller.com</a></li>
+                        <li><label>LinkedIn: </label><a href="https://linkedin.com/in/KieranEMiller">https://linkedin.com/in/KieranEMiller</a></li>
                     </ul>
                 </div>
             </ContentContainer>
