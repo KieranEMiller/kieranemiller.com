@@ -84,7 +84,7 @@ function ControlledExpansionPanels() {
                 </div>
                 <div className={classes.column_left}><Typography className={classes.secondaryHeading}>Technology</Typography></div>
                 <div className={classes.column_right}>
-                    <Typography>
+                    <Typography component={'span'}>
                     <ul>
                         <li><u>Front End: Web:</u> React, ASP.NET MVC</li>
                         <li><u>Front End: Windows:</u> WPF</li>
@@ -94,7 +94,7 @@ function ControlledExpansionPanels() {
                 </div>
                 <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>Justification</Typography> </div>
                 <div className={classes.column_right}>
-                    <Typography>
+                    <Typography component={'span'}>
                     <ul>
                         <li>Technical interest and challenge</li>
                         <li>Portfolio building</li>
@@ -103,7 +103,7 @@ function ControlledExpansionPanels() {
                 </div>
                 <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>Future Features</Typography> </div>
                 <div className={classes.column_right}>
-                    <Typography>
+                    <Typography component={'span'}>
                     <ul>
                         <li><u>Adaptive learning</u>: learn what keys, key combinations, words and phrases a user has the most trouble with and present 
                             those characters or words more often.  Demonstrate or show visually to the user over time the change in performance or accuracy
@@ -160,7 +160,7 @@ function ControlledExpansionPanels() {
                 </div>
                 <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>Justification</Typography> </div>
                 <div className={classes.column_right}>
-                    <Typography>
+                    <Typography component={'span'}>
                     <ul>
                         <li>Practical use personnally and for family</li>
                         <li>BASH scripting practice</li>
@@ -169,7 +169,7 @@ function ControlledExpansionPanels() {
                 </div>
                 <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>Future Features</Typography> </div>
                 <div className={classes.column_right}>
-                    <Typography>
+                    <Typography component={'span'}>
                     <ul>
                         <li>No enhancements slated</li>
                     </ul>
