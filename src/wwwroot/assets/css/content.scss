@@ -9,6 +9,7 @@
 
 		width:95%;
 		margin:0px auto;
+		font-size:1.2em;
 
 		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
 			max-width: $SCREEN_SIZE_SMALL;
@@ -35,14 +36,14 @@
 		}
 
 		.content_row {
-			min-height:100px;
+			min-height:150px;
 
 			ul {
 				margin-left:30px;
 			}
 
 			label {
-				width:200px;
+				width:250px;
 				display:block;
 				float:left;
 			}
