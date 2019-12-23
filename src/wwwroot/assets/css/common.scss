@@ -7,6 +7,10 @@ $SCREEN_SIZE_SMALL: 500px;
 $SCREEN_SIZE_MEDIUM: 500px;
 $SCREEN_SIZE_LARGE: 700px;
 
+* {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif
+}
+
 body, #page_wrapper {
 	background-color: $COLOR_BACKGROUND;
 }

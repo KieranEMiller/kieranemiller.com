@@ -15,11 +15,11 @@ import { Link } from 'react-router-dom';
 
 import {Routes} from './constants.jsx';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   list: {
     width: 250,
   },
-});
+}));
 
 export default function SwipeableTemporaryDrawer() {
   const classes = useStyles();
@@ -58,10 +58,11 @@ export default function SwipeableTemporaryDrawer() {
           </IconButton>
           <div id="title_block">
               <div className="title">
-                <Typography variant="h6"><a href={Routes.INDEX}>Kieran E. Miller</a></Typography>
-
+                  <a href={Routes.INDEX}>Kieran E. Miller</a>
                 </div>
-              <div className="title_sub">software engineer</div>
+              <div className="title_sub">
+                software engineer
+              </div>
           </div>
           <div className="nav_container">
               <ul>
@@ -93,7 +94,7 @@ export default function SwipeableTemporaryDrawer() {
                 {display:"About", href:Routes.ABOUT}
               ].map((item, index) => (
               <ListItem button component="a" key={item.href} href={item.href}>
-                <ListItemText primary={item.display} />
+                  <ListItemText className={classes.header_text_sm} primary={item.display} />
               </ListItem>
             ))}
           </List>

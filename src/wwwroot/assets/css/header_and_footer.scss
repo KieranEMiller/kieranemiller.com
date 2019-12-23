@@ -1,51 +1,30 @@
 
 #header, #footer {
 
+	padding:5px;
+	font-size: 1.2em;
+
 	.MuiAppBar-colorPrimary {
 		background-color: $COLOR_PRIMARY;
 	}
 
-	#header_contents, #footer_contents {
-		width:95%;
-		margin:0px auto;
-
-		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
-			max-width: $SCREEN_SIZE_SMALL;
-			padding:0px;
-		}
-		@media screen and (min-width: $SCREEN_SIZE_MEDIUM) {
-			max-width: $SCREEN_SIZE_MEDIUM;
-			padding:3px;
-		}
-		@media screen and (min-width: $SCREEN_SIZE_LARGE) {
-			max-width: $SCREEN_SIZE_LARGE;
-			padding:5px;
-		}
+	@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+		max-width: $SCREEN_SIZE_SMALL;
 	}
 
 	#title_block {
-		font-size:1.5em;
 		padding:3px;
 		flex:1;
-
-		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
-			float:none;
-			padding:0px;
-			margin:0px auto;
-			width:250px;
-			text-align:center;
-		}
-	
+		word-wrap: none;
+		flex-wrap:nowrap;
+		
 		.title, .title_sub {
-			float:left;
 			text-decoration:none;
 			color: $COLOR_PRIMARY_TEXT;
 		}
 		
 		.title {
-			font-size:.9em;
 			font-weight:bold;
-
 			a {
 				
 				color: $COLOR_PRIMARY_TEXT;
@@ -54,10 +33,7 @@
 
 		.title_sub {
 			clear:both;
-			font-size: .6em;
-			@media screen and (max-width: $SCREEN_SIZE_SMALL) {
-				display:none;
-			}
+			font-size:.7em;
 		}
 	}
 }
@@ -70,14 +46,26 @@
 .nav_container {
 	margin:10px 0px 0px 0px;
 	color:black;
-	font-size:1em;
+	font-size:.9em;
 	float:right;
 
-	@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+	
+	@media screen and (max-width: $SCREEN_SIZE_SMALL)
+	 {
 		float:none;
 		clear:both;
 		margin:0px;
 		height:30px;
+		flex: none;
+	}
+
+	@media screen and (max-width: $SCREEN_SIZE_MEDIUM)
+	 {
+		float:none;
+		clear:both;
+		margin:0px;
+		height:30px;
+		flex: none;
 	}
 
 	ul {
@@ -86,9 +74,10 @@
 		flex-wrap:wrap;
 		justify-content:center;
 
+		/*
 		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
 			width:auto;
-		}
+		}*/
 
 		li {
 			display:inline;
