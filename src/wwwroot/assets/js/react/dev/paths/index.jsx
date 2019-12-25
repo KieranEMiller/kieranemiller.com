@@ -16,7 +16,7 @@ class Index extends BaseComponent {
         return (
             <ContentContainer>
                 <div className="content_row">
-                    <h2><Link href={Routes.INDEX}>Welcome</Link></h2>
+                    <h2><Link to={Routes.INDEX}>Welcome</Link></h2>
                     <p>This site serves as the web presence and portfolio for Kieran E. Miller.</p>
                     <div className="clear_both"></div>
                 </div>
@@ -29,7 +29,7 @@ class Index extends BaseComponent {
                 </div>
 
                 <div className="content_row">
-                    <h2><Link href={Routes.CONTACT}>Contact</Link></h2>
+                    <h2><Link to={Routes.CONTACT}>Contact</Link></h2>
                     Contact me through any of the mediums <Link to={Routes.CONTACT}>shown here.</Link>
                 </div>
             </ContentContainer>
