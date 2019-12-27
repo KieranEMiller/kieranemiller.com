@@ -13,7 +13,9 @@ $SCREEN_SIZE_LARGE: 700px;
 
 body, #page_wrapper {
 	background-color: $COLOR_BACKGROUND;
-	min-width:500px;
+	min-width:480px;
+	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
 }
 
 .center {
