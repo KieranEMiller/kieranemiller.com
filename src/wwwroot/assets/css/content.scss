@@ -12,7 +12,7 @@
 		font-size:1.1em;
 		padding:5px;
 
-		@media screen and (max-width: $SCREEN_SIZE_SMALL) {
+		@media screen and (min-width: $SCREEN_SIZE_SMALL) {
 			max-width: $SCREEN_SIZE_SMALL;
 			padding:0px;
 		}
@@ -20,7 +20,10 @@
 			max-width: $SCREEN_SIZE_MEDIUM;
 			padding:3px;
 		}
-
+		@media screen and (min-width: $SCREEN_SIZE_LARGE) {
+			max-width: $SCREEN_SIZE_LARGE;
+			padding:5px;
+		}
 		h2 {
 			border-bottom: solid #000000 5px;
 			margin-bottom: 10px;
