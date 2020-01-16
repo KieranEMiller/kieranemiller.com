@@ -59,7 +59,7 @@ function ControlledExpansionPanels() {
             <div className={classes.column_left}><Typography className={classes.heading}>Key Commander</Typography></div>
             <div className={classes.column_right}>
                 <Typography >Typing accuracy measurement and analysis</Typography> 
-                <Typography className={classes.secondaryHeading}><a href="https://github.com/KieranEMiller/key-commander">https://github.com/KieranEMiller/key-commander</a></Typography>
+                <Typography className={classes.secondaryHeading}><a target="_blank" href="https://github.com/KieranEMiller/key-commander">https://github.com/KieranEMiller/key-commander</a></Typography>
             </div>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -79,7 +79,7 @@ function ControlledExpansionPanels() {
                 <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>URL</Typography> </div>
                 <div className={classes.column_right}>
                     <Typography>
-                        <a href="http://keycdr.com">http://keycdr.com</a>
+                        <a target="_blank" href="http://keycdr.com">http://keycdr.com</a>
                     </Typography>
                 </div>
                 <div className={classes.column_left}><Typography className={classes.secondaryHeading}>Technology</Typography></div>
@@ -120,6 +120,68 @@ function ControlledExpansionPanels() {
             </div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
+      <ExpansionPanel expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+        <ExpansionPanelSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3bh-content"
+          id="panel3bh-header"
+        >
+            <div className={classes.column_left}><Typography className={classes.heading}>Media Foreman</Typography></div>
+            <div className={classes.column_right}>
+                <Typography >Analyze and manage metadata and images for media files</Typography> 
+                <Typography className={classes.secondaryHeading}><a target="_blank" href="https://github.com/KieranEMiller/media-foreman">https://github.com/KieranEMiller/media-foreman</a></Typography>
+            </div>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+            <div className={classes.container}>
+                <div className={classes.column_left}><Typography className={classes.secondaryHeading}>Purpose</Typography></div>
+                <div className={classes.column_right}>
+                    <Typography>
+                        Analyze and manage your media file collection, helping you to identify and clean up the metadata and tags in your
+                        collection and make it consistent
+                    </Typography>
+                </div>
+                <div className={classes.column_left}><Typography className={classes.secondaryHeading}>Development Status</Typography></div>
+                <div className={classes.column_right}>
+                    <Typography>
+                        Active, not stable or production ready
+                    </Typography>
+                </div>
+                <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>URL</Typography> </div>
+                <div className={classes.column_right}>
+                    <Typography>
+                        N/A
+                    </Typography>
+                </div>
+                <div className={classes.column_left}><Typography className={classes.secondaryHeading}>Technology</Typography></div>
+                <div className={classes.column_right}>
+                    <Typography>
+                        Python
+                    </Typography>
+                </div>
+                <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>Justification</Typography> </div>
+                <div className={classes.column_right}>
+                    <Typography component={'span'}>
+                    <ul>
+                        <li>Practical use personnally</li>
+                        <li>Python practice</li>
+                    </ul>
+                    </Typography>
+                </div>
+                <div className={classes.column_left}> <Typography className={classes.secondaryHeading}>Future Features</Typography> </div>
+                <div className={classes.column_right}>
+                    <Typography component={'span'}>
+                    <ul>
+                        <li><u>GUI</u>: Implement a GUI with Tkinter instead of the current console app option</li>
+                        <li><u>Auto-Complete</u>: Implement a way to automatically determine the album, artist, and track information based on hints
+                        from the folder and length of the song
+                        </li>
+                    </ul>
+                    </Typography>
+                </div>
+            </div>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
       <ExpansionPanel expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
@@ -129,7 +191,7 @@ function ControlledExpansionPanels() {
             <div className={classes.column_left}><Typography className={classes.heading}>Backup Rsync</Typography></div>
             <div className={classes.column_right}>
                 <Typography >Backup script and email tool</Typography> 
-                <Typography className={classes.secondaryHeading}><a href="https://github.com/KieranEMiller/backup-rsync">https://github.com/KieranEMiller/backup-rsync</a></Typography>
+                <Typography className={classes.secondaryHeading}><a target="_blank" href="https://github.com/KieranEMiller/backup-rsync">https://github.com/KieranEMiller/backup-rsync</a></Typography>
             </div>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
